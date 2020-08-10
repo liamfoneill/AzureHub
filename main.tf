@@ -6,6 +6,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "test" {
+    provider = "Development"
     name = "example"
     location = "West Europe"
 }
